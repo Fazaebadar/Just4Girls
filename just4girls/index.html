@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just4girls</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Lexend+Deca:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+</style>
+ 
+<body style="background-color: #FFC0CB;">
+    
+    <header class="header">
+     <div class="top-bar">
+    <div class="container">
+        <div class="contact-info">
+            <a href="tel:+923034145112" class="phone"><i class="fas fa-phone-alt"></i> +923034145112</a>
+            <a href="mailto:fazaebadar@gmail.com" class="email"><i class="fas fa-envelope"></i> fazaebadar@gmail.com</a>
+        </div>
+        <div class="header-center">
+                    <a href="#" class="logo">
+                        <img src="just4girls_logo.jpg" alt="Just4Girls.pk">
+                    </a>
+                </div>
+        <div class="top-right">
+            <a href="login.html" class="login-link" id="loginRegisterBtn"><i class="fas fa-user"></i> <span id="userStatus">Login / Register</span></a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </header>
+
+<!-- Im adding  -->
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-content">
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="index.html" data-category="makeup">Home</a></li>
+                    <li><a href="makeup.html" data-category="makeup">Makeup</a></li>
+                    <li><a href="skincare.html" data-category="skincare">Skincare</a></li>
+                    <li><a href="fragrances.html" data-category="fragrances">Fragrances</a></li>
+                    <li><a href="haircare.html" data-category="haircare">Hair Care</a></li>
+                    <li><a href="beautytools.html" data-category="tools">Beauty Tools</a></li>
+                    <li><a href="bathnbody.html" data-category="bath">Bath & Body</a></li>
+                    <li>
+                        <div class="header-right">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search for products" class="search-input" id="searchInput">
+                        <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                    </li>
+                </ul>      
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slide active">
+            <div class="hero-content">
+                <h1>Slay Every Look</h1>
+                <p>Find your perfect match — from lips to lashes</p>
+                <button class="cta-btn">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="product_image_1.jpg" alt="Beauty Products">
+            </div>
+        </div>
+        
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Makeup Revolution – Beauty Without Limits</h1>
+                <p>from flawless foundations to bold palettes</p>
+                <button class="cta-btn">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="product_image_2.jpg" alt="Makeup Products">
+            </div>
+        </div>
+        
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Kiss-Ready Shades</h1>
+                <p>Perfect lips for every occasion</p>
+                <button class="cta-btn">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="product_image_3.jpg" alt="Lip Products">
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Gloss Goals by Kiko Milano</h1>
+                <p>Hydrate & shine with every swipe — 3D gloss that turns heads</p>
+                <button class="cta-btn">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="PM_Kiko_milano_3D_Hydra_lipgloss_1.png" alt="Lip Products">
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <div class="hero-content">
+                <h1>Gua Sha & Face Roller Set</h1>
+                <p>A face roller crafted to boost circulation, reduces puffiness</p>
+                <button class="cta-btn">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="GettyImages-1253197555.webp" alt="Lip Products">
+            </div>
+        </div>
+
+         <div class="hero-slide">        
+            <div class="hero-content">
+                <h1>Opio Kisses – Body Mist</h1>
+                <p>Long-lasting fragrance for every mood — soft, sweet & unforgettable</p>
+                <button class="cta-btn">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="Opio-Kisses-Body-Mist-250ml-2.jpg" alt="Perfumes">
+            </div>
+        </div>
+        
+        <div class="hero-controls">
+            <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="hero-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Brand Banners -->
+<section class="brand-banners">
+    <div class="container">
+        <div class="brand-grid">
+            <div class="brand-item" style="background-image: url('makeupimages/laura-mercier-laura-mercier-translucent-loose-setting-powder-736150000316-32739519430743_1.jpeg'); background-size: cover; background-position: center;">
+    <a href="makeup.html">
+        <h3>Make Up</h3>
+    </a>
+</div>
+            <div class="brand-item" style="background-image: url('skincareimages/glowing-skin-masks.jpg'); background-size: cover; background-position: center;">
+    <a href="skincare.html">
+        <h3 style="text-decoration: none;">Skin Care</h3>
+    </a>
+</div>
+
+            <div class="brand-item" style="background-image: url('haircareimages/strong_hair_serum.webp'); background-size: cover; background-position: center;">
+                <a href="haircare.html">
+                    <h3>Hair Care</h3>
+                </a>
+            </div>
+            <div class="brand-item" style="background-image: url('fragrancesimages/Perfume.webp'); background-size: cover; background-position: center;">
+                <a href="fragrances.html">
+                    <h3>Fragnances</h3>
+                </a>
+            </div>
+            <div class="brand-item" style="background-image: url('beautytoolsimages/ice\ roller.webp'); background-size: cover; background-position: center;">
+                <a href="beautytools.html">
+                    <h3>Beauty Tools</h3>
+                </a>
+            </div>
+              <div class="brand-item" style="background-image: url('bath and body/Tree-Hut-Watermelon-Shea-Sugar-Exfoliating-and-Hydrating-Body-Scrub-18-oz_6ad862cf-16f3-4d44-becc-f3a96af4d1c1.56bc9ff9da3f4177cd911e839aeac404.webp'); background-size: cover; background-position: center;">
+                <a href="bathnbody.html">
+                    <h3>Bath & Body</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Product Sections -->
+    <section class="product-section">
+    <h2>The Best Offers</h2>
+    <div class="product-grid">
+        
+        <!-- Existing Best Offer Products (if any) -->
+        <!-- Add your previous items here -->
+        
+        <!-- ✅ New Product 1 -->
+        <div class="product-card">
+            <img src="makeupimages/836-shape-tape-concealer-29N-lght-mdm-MAIN2-0.webp" alt="Concealor">
+            <h3>Concealor</h3>
+            <p>₨ 1,800</p>
+            <button class="add-to-cart-btn" data-product-id="10">Add to Cart</button>
+            <button class="wishlist-btn" data-product-id="10"> Wishlist</button>
+        </div>
+        
+        <!-- ✅ New Product 2 -->
+        <div class="product-card">
+            <img src="haircareimages\curlor.jpg" alt="Remington Hair Curlor">
+            <h3>Remington Hair Curlor</h3>
+            <p>₨ 7,000</p>
+            <button class="add-to-cart-btn" data-product-id="28">Add to Cart</button>
+            <button class="wishlist-btn" data-product-id="28"> Wishlist</button>
+        </div>
+
+        <!-- ✅ New Product 3 -->
+        <div class="product-card">
+            <img src="product_image_2.jpg" alt="MUA Pressed Powder">
+            <h3>MUA Pressed Powder – Translucent</h3>
+            <p>₨ 1,000</p>
+            <button class="add-to-cart-btn" data-product-id="2">Add to Cart</button>
+            <button class="wishlist-btn" data-product-id="2"> Wishlist</button>
+        </div>
+
+        <!-- ✅ New Product 3 -->
+        <div class="product-card">
+            <img src="skincareimages/TheOrdinaryGranactiveRetinoid5_inSqualane30ml_1-600x783.webp" alt="Face Serum">
+            <h3>The Ordinary Granactive Retinoid Serum</h3>
+            <p>₨ 1,300</p>
+            <button class="add-to-cart-btn" data-product-id="47">Add to Cart</button>
+            <button class="wishlist-btn" data-product-id="47"> Wishlist</button>
+        </div>
+
+    </div>
+</section>
+
+             <main class="main-content">
+    <div class="container">
+        <!-- Popular Products -->
+        <section class="product-section">
+            <h2>Popular Products</h2>
+            <div class="product-grid">
+                
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="coconut-hair-oil.jpg" alt="Herbion Hair Oil">
+                    <h3>Herbion Hair Oil</h3>
+                    <p>₨ 399</p>
+                    <button class="add-to-cart-btn" data-product-id="23">Add to Cart</button>
+                    <button class="wishlist-btn" data-product-id="23">Wishlist</button>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="makeupimages/e-l-f-cosmetics-e-l-f-cosmetics-power-grip-dewy-setting-spray-609332847590-32688382410839.webp" alt="Dewy Setting Spray">
+                    <h3>Dewy Setting Spray</h3>
+                    <p>₨ 2,400</p>
+                    <button class="add-to-cart-btn" data-product-id="44">Add to Cart</button>
+                    <button class="wishlist-btn" data-product-id="44">Wishlist</button>
+                </div>
+                <div class="product-card">
+            <img src="haircareimages/tresemme.jpg" alt="Hair Shampoo">
+            <h3>TRESemme Moisture Hydrating Shampoo</h3>
+            <p>₨ 1,010</p>
+            <button class="add-to-cart-btn" data-product-id="26">Add to Cart</button>
+            <button class="wishlist-btn" data-product-id="26">Wishlist</button>
+        </div>
+            </div>
+        </section>
+        <!------------------------------------------------->
+         <!-- New Products -->
+        <section class="product-section">
+            <h2>New Products</h2>
+            <div class="product-grid">
+                
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="PM_Kiko_milano_3D_Hydra_lipgloss_1.png" alt="3D_Hydra_lipglos">
+                    <h3> KIKO Milano 3D Hydra lipglos</h3>
+                    <p>₨ 2,299</p>
+                    <button class="add-to-cart-btn" data-product-id="6">Add to Cart</button>
+                    <button class="wishlist-btn" data-product-id="6">Wishlist</button>
+                </div>
+                
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+        <img src="GettyImages-1253197555.webp" alt="Face Rollers and Gua Sha Set">
+        <h3>Gua Sha & Face Roller Set</h3>
+        <p>₨ 1,099</p>
+        <button class="add-to-cart-btn" data-product-id="19">Add to Cart</button>
+        <button class="wishlist-btn" data-product-id="19">Wishlist</button>
+      </div>
+                  <!-- Product 3 -->
+                <div class="product-card">
+            <img src="fragrancesimages/perfume-for-her.jpg" alt="Perfume-For-Her">
+            <h3>Perfume-For-Her</h3>
+            <p>₨ 5,400</p>
+            <button class="add-to-cart-btn" data-product-id="38">Add to Cart</button>
+            <button class="wishlist-btn" data-product-id="38">Wishlist</button>
+        </div>
+            </div>
+        </section>
+
+
+    </div>
+</main>
+    <!-- Bottom Navigation -->
+<nav class="bottom-nav">
+<div >
+
+</div>
+<a href="index.html" class="nav-item active" id="homeNav">
+<i class="fas fa-home"></i>
+<span>Home</span></a>
+
+    <div class="nav-item" id="wishlistNav">
+<i class="fas fa-heart"></i>
+<span>Wishlist</span>
+<span id="wishlistBadge" class="badge">0</span>
+</div>
+
+<div class="nav-item" id="cartNav">
+<i class="fas fa-shopping-cart"></i>
+<span>Cart</span>
+<span class="badge" id="cartBadge">0</span>
+</div>
+<a href="#" class="nav-item" id="accountNav">
+    <i class="fas fa-user"></i>
+    <span>My account</span>
+</a>
+
+
+</nav>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button class="modal-close" data-modal="loginModal"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+
+<!-- Google Sign-In Button -->
+<div style="margin-top: 20px; text-align: center;">
+    <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+         data-callback="handleGoogleLogin"
+         data-auto_prompt="false">
+    </div>
+
+    <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+</div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Register</h3>
+                <button class="modal-close" data-modal="registerModal"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name:</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Phone:</label>
+                    <input type="tel" id="registerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerAddress">Address:</label>
+                    <textarea id="registerAddress" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password:</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn-primary">Register</button>
+                <p class="form-footer">Already have an account? <a href="#" id="showLogin">Login here</a></p>
+                <!-- Google Sign-In Button -->
+<div style="margin-top: 20px; text-align: center;">
+    <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+         data-callback="handleGoogleLogin"
+         data-auto_prompt="false">
+    </div>
+
+    <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+</div>
+                
+            </form>
+        </div>
+    </div>
+
+   
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="modal-close" data-modal="cartModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-content">
+                <div id="cartItems"></div>
+                <div class="cart-total">
+                    <h4>Total: ₨ <span id="cartTotal">0</span></h4>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn-primary" id="checkoutBtn">Checkout</button>
+                    <button class="btn-secondary" id="clearCartBtn">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Wishlist Modal -->
+<div class="modal" id="wishlistModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>My Wishlist</h3>
+      <button class="modal-close" onclick="closeModal('wishlistModal')"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="wishlist-content">
+      <div id="wishlistItems" class="cart-items"></div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- My Account Modal -->
+    <div class="modal" id="accountModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>My Account</h3>
+                <button class="modal-close" data-modal="accountModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="account-content">
+                <div id="accountInfo"></div>
+                <div class="account-actions">
+                    <button class="btn-secondary" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Results Modal -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Search Results</h3>
+                <button class="modal-close" data-modal="searchModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="search-content">
+                <div id="searchResults"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <a
+      href="https://wa.me/923004282693"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Contact us on WhatsApp"
+    >
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+        />
+      </svg>
+    </a> -->
+    <div class="modal" id="productDetailModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="productTitle">Product Title</h3>
+      <button class="modal-close" onclick="closeModal('productDetailModal')">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="product-detail-body">
+      <img id="productImage" src="" alt="Product" style="width: 100%; max-height: 300px; object-fit: contain;">
+      <p id="productDescription" style="margin-top: 10px;">Product description will appear here.</p>
+      <p><strong>Price:</strong> ₨ <span id="productPrice"></span></p>
+      <button class="add-to-cart-btn" id="productDetailAddToCart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+    
+
+<!-- Professional Footer -->
+<footer style="background-color: #ff4081; color: white; font-family: 'Poppins', sans-serif; padding: 50px 80px; font-size: 14px;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px;">
+
+    <!-- Column 1: Brand -->
+    <div>
+     <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+  <img src="just4girls_logo.jpg" alt="just4girls" style="height: 40px;">
+  <span style="font-size: 18px; font-weight: bold; font-family: 'Poppins', sans-serif; color: black;">just4girls</span>
+</div>
+      <p style="line-height: 1.6;">
+        We enhance your beauty Since 2004. <br>We provide skincare and beauty products which are made by using natural and medicated ingredients which have no side effect.
+      </p>
+      
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h4 style="font-size: 16px; margin-bottom: 12px;">Quick Links</h4>
+      <p><a href="index.html" style="color: white; text-decoration: none;">Home</a></p>
+      <p><a href="skincare.html" style="color: white; text-decoration: none;">Skincare Products</a></p>
+      <p><a href="fragrances.html" style="color: white; text-decoration: none;">Fragrances</a></p>
+      <p><a href="haircare.html" style="color: white; text-decoration: none;">Haircare Products</a></p>
+      <p><a href="bathnbody.html" style="color: white; text-decoration: none;">Bath&Body Products</a></p>
+      <p><a href="beautytools.html" style="color: white; text-decoration: none;">BeautyTool Products</a></p>
+    </div>
+
+    <!-- Column 3: Products -->
+    <div>
+      <h4 style="font-size: 16px; margin-bottom: 12px;">Products</h4>
+      <p>Makeup</p>
+      <p>Skincare</p>
+      <p>Haircare</p>
+    </div>
+
+    <!-- Column 4: Contact Info -->
+    <div>
+      <h4 style="font-size: 16px; margin-bottom: 12px;">Contact Info</h4>
+      <p>just4girls, MM Alam Market<br>Near Gulberg, Lahore</p>
+      <p><i class="fas fa-envelope" style="margin-right: 6px;color: blue;"></i> fazaebadar@gmail.com</p>
+      <p><i class="fas fa-phone" style="margin-right: 6px;color: black;"></i> +923034145112</p>
+      <p>Mon–Sun: 9AM–11PM<br>24/7</p>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+<div style="text-align: center; margin-top: 30px; padding-top: 15px; padding-bottom: 40px; border-top: 1px solid rgba(255, 255, 255, 0.4); color: white; font-size: 14px;">
+  © 2004 just4girls. All rights reserved. |
+  <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> |
+  <a href="#" style="color: white; text-decoration: underline;">Terms of Service</a>
+</div>
+
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
